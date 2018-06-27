@@ -11,3 +11,5 @@ npm install
 node index.js
 ```
 5. Go to the localhost server (http://127.0.0.1:port). Port number is shown when you run the above command.
+
+6. Deployed [here](https://powerful-island-32077.herokuapp.com/) also.
