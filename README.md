@@ -1,15 +1,26 @@
 # Chat-box
 
-1. Requirements/Depenencies are given in `package.json` file.
-2. Clone the repository and go to the top-most level of the repository and run the command:
-```
-npm install
-```
-3. It installs all the dependencies given in the json file and creates `node_modules` folder.
-4. Then, run the following command to start the server:
-```
-node index.js
-```
-5. Go to the localhost server (http://127.0.0.1:port). Port number is shown when you run the above command.
+This project is a node.js application serving a chat-room where people can be joined by their names. People who are online are shown aside. I've also deployed this node app on Heroku.
 
-6. Deployed [here](https://powerful-island-32077.herokuapp.com/) also.
+## Dependencies
+*   node.js / npm
+*   socket.io
+*   express
+*   ejs
+*   nodemon
+
+## Usage
+*   Download and run `npm install`.
+*   Then, run locally, `npm start`.
+*   Go the localhost server with port 8000.
+*   Open different sessions while running, fix usernames and start chatting.
+*   In case, you wanted to add your own IP address, update `index.js` like this example:
+```node
+var server = app.listen(port, "192.168.56.102", function(){
+	console.log('Listening to requests on port ' + port);
+});
+```
+*   Also, in continuation of above point, please update `public/js/chat.js` also with your IP address and port number as below:
+```node
+var socket = io.connect("http://192.168.56.102:8000/");
+```
