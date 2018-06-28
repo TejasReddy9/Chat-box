@@ -1,5 +1,5 @@
 title: Basic Chat Box
-description: A Chat box built using the concepts of Socket programming, using Node.js
+description: A Chat box built using the concepts of Socket programming, Node.js and Socket.io
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
